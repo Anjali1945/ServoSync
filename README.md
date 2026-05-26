@@ -5,7 +5,7 @@ A personal embedded systems project I built to learn STM32 peripheral interfacin
 ---
 
 ## Demo
-[ Watch Demo Video ](#https://drive.google.com/file/d/1Bppy4GxrbdgNE0Lv4qm8yLI8DG3elWDa/view?usp=drivesdk) 
+[ Watch Demo Video ](https://drive.google.com/file/d/1Bppy4GxrbdgNE0Lv4qm8yLI8DG3elWDa/view?usp=drivesdk) 
 
 ---
 
