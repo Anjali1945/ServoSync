@@ -173,4 +173,5 @@ ServoSync/
 ## Author
 Anjali Thaware
 B.Tech - Electronics and Communication Engg.
-GitHub - github.com/Anjali1945
+GitHub - [github.com/Anjali1945](https://github.com/Anjali1945)
+
