@@ -98,13 +98,13 @@ A personal embedded systems project I built to learn STM32 peripheral interfacin
 The servo needs a 50Hz signal where pulse width determines angle.
 
 ```
-TIM3 clock     = 168MHz / 168 = 1MHz (1 tick = 1 microsecond)
+TIM3 clock     = 84MHz / 83+1 = 1MHz (1 tick = 1 microsecond)
 Timer period   = 20000 ticks = 20ms = 50Hz
 
 Servo positions:
-  230  µs pulse → 0°
-  752  µs pulse → 45°
-  1275 µs pulse → 90°
+  250  µs pulse → 0°
+  750  µs pulse → 90°
+  1250 µs pulse → 180°
 ```
 
 ---
@@ -112,8 +112,8 @@ Servo positions:
 ## Joystick to servo mapping
 
 ```c
-// Map joystick ADC (0–4095) to servo PWM range (230–1275)
-servoVal = ((vrx + vry) / 2 * 1045 / 4095) + 230;
+// Map joystick ADC (0–4095) to servo PWM range (250–1250)
+servoVal = ((vrx + vry) / 2 * 1000 / 4095) + 250;
 ```
 
 Both axes are averaged so diagonal joystick movement also affects the servo smoothly.
